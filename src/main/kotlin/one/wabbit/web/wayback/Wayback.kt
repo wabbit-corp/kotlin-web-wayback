@@ -93,7 +93,7 @@ object Wayback {
         }
 
         return try {
-            var url = AvailableCheckUrl + "?url=${URLEncoder.encode(url, StandardCharsets.UTF_8)}"
+            var url = AvailableCheckUrl + "?url=${URLEncoder.encode(url, "UTF-8")}"
             if (timestamp != null) {
                 url += "&timestamp=${formatTimestamp(timestamp)}"
             }
